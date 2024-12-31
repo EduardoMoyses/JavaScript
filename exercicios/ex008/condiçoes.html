@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições em JavaScript</title>
+    <style>
+        form {
+            margin: 30px;
+        }
+
+        div {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <input type="text" name="ipais" id="pais">
+        <input type="button" value="Enviar" onclick="resultado()">
+        <div id="res">resultado...</div>
+    </form>
+
+    <script>
+        function resultado() {
+
+        var ipaís = window.document.getElementById('pais')
+        var res = window.document.getElementById('res')
+        var país = String(ipaís.value)
+
+        if (país == 'Brasil') {
+            res.innerHTML = `Se você mora em ${país} então você é brasileiro`
+        } else {
+            res.innerHTML = `Se você mora em ${país} então você é estrangeiro`
+        }
+
+    }
+    </script>
+</body>
+</html>
