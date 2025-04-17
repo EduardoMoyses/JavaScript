@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crie seu herói</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body,html {
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        header {
+            height: 30%;
+            text-align: center;
+        }
+
+        #conteudo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        select {
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        #botao,#mensagem {
+            margin-top: 15px;
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Escolha seu herói favorito</h1>
+    </header>
+    <section id="conteudo">
+            
+                <select name="iherois" id="herois">
+                    <option value="" selected>--escolha--</option>
+                    <optgroup label="Heróis">
+                        <option value="homem-aranha">Homem aranha</option>
+                        <option value="batman">Batman</option>
+                        <option value="superman">Superman</option>
+                        <option value="flash">Flash</option>
+                    </optgroup>
+
+                    <optgroup label="Anti-heróis">
+                        <option value="deadpool">Deadpool</option>
+                        <option value="justiceiro">Justiceiro</option>
+                    </optgroup>
+                </select>
+                <button id="botao">Mostrar personagem</button>
+            
+            <p id="mensagem"></p>
+            <div id="imagens">
+                <img src="imagens/homem-aranha.jpg" alt="homem-aranha" id="homem-aranha" class="img">
+                <img src="imagens/batman.jpg" alt="batman" id="batman" class="img">
+                <img src="imagens/superman.jpg" alt="superman" id="superman" class="img">
+                <img src="imagens/flash.jpg" alt="flash" id="flash" class="img">
+                <img src="imagens/deadpool.jpg" alt="deadpool" id="deadpool" class="img">
+                <img src="imagens/justiceiro.jpg" alt="justiceiro" id="justiceiro" class="img"></div>
+    </section>
+
+    <script src="herois2.js"></script>
+</body>
+</html>

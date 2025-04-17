@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body,html {
+            height: 100vh;
+            width: 100vw;
+        }
+        #conteudo {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        p,input {
+            margin-bottom: 20px;
+        }
+
+        input{
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.466);
+            text-align: center;
+        }
+
+        #botao {
+            height: 40px;
+            width: 100px;
+            border: 1px solid rgba(0, 0, 0, 0.37);
+            border-radius: 10px;
+        }
+
+        #botao:hover {
+            background-color: gray;
+            color: white;
+        }
+
+        #resposta {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section id="conteudo">
+        
+            <p>Adicione seu pedido aqui em baixo</p>
+            <input type="text" name="ipedido" id="pedido" autocomplete="on" placeholder="digite seu pedido aqui" minlength="3">
+            <button id="botao">Fazer pedido</button>
+            <p id="mensagem"></p>
+        
+    </section>
+
+    <script src="callback-7.js"></script>
+</body>
+</html>

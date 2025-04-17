@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            height: 97vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(108, 197, 167);
+        }
+        div {
+            height: 300px;
+            width: 300px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="res"></div>
+
+    <script>
+        var a = window.document.getElementById('res')
+        a.addEventListener('click', clicar)
+        var c = 1
+        function clicar() {
+            var resultado = ""
+            var i = 1
+
+            while (i <= c) {
+                if (i <= 20) {
+                    resultado += i + " "
+                }
+                 i++
+            }
+
+            a.innerHTML = resultado
+             c++
+
+            /*
+            
+            for (var i = 1; i <= c; i++) {
+                if (i <=20) {
+                    resultado += i + " "
+                }
+            }
+            if (c < 20) {
+                c++;
+            }
+             a.innerText = resultado
+            */
+        }
+
+       
+    </script>
+</body>
+</html>
